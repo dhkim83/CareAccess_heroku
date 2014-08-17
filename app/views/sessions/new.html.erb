@@ -1,0 +1,17 @@
+<h1>Log in</h1>
+<div class="signUpForm text-center">
+<p5>
+
+<%= form_for @user, {url: session_path} do |f| %>
+	
+	Email: <%= f.text_field :email, placeholder: "enter your email" %><br />
+
+	Password: <%= f.password_field :password, placeholder: "enter your password" %><br />
+</p5>
+
+	<%= f.submit "Log in", class: "btn btn-primary btn-large" %>
+
+	
+<% end %>
+
+</div>

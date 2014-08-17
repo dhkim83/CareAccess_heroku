@@ -1,0 +1,21 @@
+<h1><%= @hospital.name %></h1>
+<h1><%= @hospital.practice_field %></h1>
+<h1><%= @hospital.location %></h1>
+<h1><%= @hospital.benefit %></h1> 
+
+<br />
+<p3>The hospital you have chosen is <%= @hospital.name %>, in the city of <%= @hospital.location %>, practice field is <%= @hospital.practice_field %>, and the current available government benefit is the <%= @hospital.benefit %> option. </p3><br>
+
+<br />
+<p3>To select this hospital on your page, please click the 'Your Page' link below</p3><br />
+
+<br />
+<%= link_to "Your Page", pairings_path(hospital_id: @hospital.id),method: :post %><br>
+
+
+<br><br />
+<%= link_to "Back to the hospital list", hospitals_path %>
+
+
+
+

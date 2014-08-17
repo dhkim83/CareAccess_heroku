@@ -1,0 +1,31 @@
+<h1>Hospital List in Health Care Shortage Area</h1>
+
+
+ 
+<%= link_to "Show All", hospitals_path(hospitalfilter:"showall") %><br />
+<%= link_to "By Hospital Name Only", hospitals_path(hospitalfilter:"name") %><br />
+<%= link_to "By City Only", hospitals_path(hospitalfilter:"location") %><br />
+<%= link_to "By Primary Care Only", hospitals_path(hospitalfilter:"primary_care")%><br />
+<%= link_to "By Registered Nurse Only", hospitals_path(hospitalfilter:"registered_nurse")%><br />
+<%= link_to "By State Gov Benefit Only", hospitals_path(hospitalfilter:"state") %><br />
+<%= link_to "By Federal Gov Benefit Only", hospitals_path(hospitalfilter:"federal")%><br />
+  
+  <br>
+
+
+  <ol>
+<% @hospitals.each do |h| %>
+  <li>
+    <strong> <%= h.name %> </strong> 
+    [<%= h.name %>]
+    <%= link_to "Click here for more information", hospital_path(h) %>
+  </li>
+
+<% end %>
+</ol>
+
+
+</div>
+
+
+

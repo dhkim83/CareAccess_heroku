@@ -1,0 +1,28 @@
+<p><br />
+  <strong>Name:</strong>
+  <h2><%= @user.name %></h2>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <h2><%= @user.email %></h2>
+</p>
+
+
+
+<br><br />
+<p>If you want to edit your account information, please click 'Edit' button below</p>
+<%= link_to 'Edit Account', edit_user_path(@user) %> <br />
+
+
+
+<br><br />
+<p>Go to 'Your Page' to save your hospital selection</p>
+
+<%= link_to 'Your Page', pairings_path %><br />
+
+
+
+
+<br></br>
+<%= link_to 'Go back to the main page', users_path %><br />

@@ -1,0 +1,59 @@
+<h1>Care Access</h1>
+
+<div class="letter">
+<p>This website is designed to improve the health care system in Los Angeles County.</p> 
+<p>Primary care doctors and registered nurses can search available jobs by locations, practice fields, public benefits available.</p> 
+<p>This program benefits many people across Los Angeles County. For health care providers, incentives are provided from the State or Federal Government to work in areas with great need.</p> 
+<p>For hospitals it provides assistance in matching job candidates to open positions.</p>
+
+
+<p> In order to access, please log in or sign up for the site </P>
+
+<% if current_user %> 
+
+
+<p>If you are a new user, please click 'Sign up' link above</p>
+
+<p>In order to access to this site, please click 'Log In' link above</p> 
+
+<%= link_to 'Your Page', pairings_path %>
+
+
+<% else %>
+
+
+<% end %>
+
+</div>
+
+
+
+
+
+<div class= "address">
+<address>
+  <strong>Contact Information</strong><br>
+  <strong>Healthcare Workforce Development Division</strong><br>
+  400 R Street, Suite 330<br>
+Sacramento, CA 95811<br>
+<abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+  <strong>Lupe Alonzo-Diaz</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+</div>
+
+<%= link_to 'Go back to the hospital list', hospitals_path %>
+
+
+
+
+
+
+
+
+
+
+
